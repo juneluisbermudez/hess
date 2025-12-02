@@ -12,9 +12,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/three": "^0.181.0",
     "axios": "^1.13.2",
     "chart.js": "^4.5.1",
+    "gsap": "^3.13.0",
+    "ogl": "^1.0.11",
     "pinia": "^3.0.4",
+    "three": "^0.181.2",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3",
     "vuetify": "^3.10.11"

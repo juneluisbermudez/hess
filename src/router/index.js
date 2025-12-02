@@ -1,18 +1,14 @@
+import Dashboard from '@/views/Dashboard.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import DashboardView from '../views/DashboardView.vue'
-import LoginView from '../views/LoginView.vue'
+import EssayDetail from '../components/EssayDetail.vue'
+import EssayUploader from '../components/EssayUploader.vue'
+import Login from '../views/LoginView.vue'
 
 const routes = [
-  {
-    path: '/',
-    name: 'login',
-    component: LoginView
-  },
-  {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: DashboardView
-  },
+  { path: '/', name: 'Login', component: Login },
+  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/upload', name: 'Upload', component: EssayUploader },
+  { path: '/essay/:id', name: 'EssayDetail', component: EssayDetail }
 ]
 
 const router = createRouter({
