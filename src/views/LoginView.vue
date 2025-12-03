@@ -21,16 +21,15 @@
           elevation="10"
           style="width: 380px; border-radius: 20px; backdrop-filter: blur(20px); background: rgba(255,255,255,0.12); z-index: 10;"
         >
+        <TextType 
+          :text="['Welcome to', 'Handwritten Esay Scoring System!']"
+          :typingSpeed="50"
+          :pauseDuration="1500"
+          :showCursor="true"
+          cursorCharacter="|"
+        />
+
           <div class="text-center mb-6">
-            <TextTrail
-              text="Welcome to HEES!"
-              :noise-factor="1"
-              :noise-scale="0.0005"
-              font-weight="600"
-              :alpha-persist-factor="0.95"
-              :animate-color="false"
-              text-color="#ffffff"
-            />
             <p class="text-grey">{{ quote }}</p>
           </div>
 
@@ -79,7 +78,7 @@
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import FloatingLines from "../components/FloatingLines.vue";
-import TextTrail from "../components/TextTrail.vue";
+import TextType from "../components/TextType.vue";
 
 const router = useRouter();
 
